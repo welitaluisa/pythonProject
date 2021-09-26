@@ -53,6 +53,9 @@ def brincar_de_plim(fim):
 
  # chamar a função de calculo a área do  retangulo
 
+if __name__ == '__main__':
+    print_hi('welita')
+
 resultado = calcular_area_do_retangulo(3, 4)
 print(f'A área do retangulo é de {resultado} m²')
 
