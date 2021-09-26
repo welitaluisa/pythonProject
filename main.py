@@ -83,6 +83,7 @@ def teste_calcular_area_do_quadrado():
 
 def test_calcular_area_do_triangulo():
     assert calcular_area_do_triangulo(3,4)==6
+
 if __name__ == '__main__':
     print_hi('welita')
 

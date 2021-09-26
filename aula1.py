@@ -8,6 +8,11 @@ import pytest
 
 # DEF = DEFINITION = DEFINIÇÃO
 
+
+def print_hi(name):
+    print(f'Oi, {name}') # a partir do python 3
+    print('oi, ' + name) # antes do python 3
+
 def calcular_area_do_retangulo(largura, comprimento):
     return largura * comprimento
 
