@@ -44,13 +44,17 @@ def apoiar_candidato(nome, vezes):
             print(numero + 1, ' -  ', nome)
 
 def brincar_de_plim(fim):
-    for numero in range (fim):
+    for numero in range(fim):
         if numero % 4 == 0:
             print('PLIN!')
         else:
             print('{:0>3}'.format(numero))
 
-
+def exibir_dia_da_semana_if(numero):
+    if numero ==1:
+        print('o dia é segunda')
+    else:
+        print('outro dia')
  # chamar a função de calculo a área do  retangulo
 
 if __name__ == '__main__':
@@ -78,3 +82,7 @@ apoiar_candidato('Faker', 100)
 
 # Brincar de Plim
 brincar_de_plim(100)
+
+# exemplo de dia da semana com if - elif - else
+
+exibir_dia_da_semana_if(1)
