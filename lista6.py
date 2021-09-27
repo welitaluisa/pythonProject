@@ -1,9 +1,13 @@
+from os import name
+
 import pytest
 
 def calcular_taboada(numero, multiplicador):
 
+
  for numero in range(0, 11):
     print(f'{numero} * {multiplicador} = {numero * multiplicador}')
+
 
 def calcular_fosforos(num1, num2):
  return num1 * num2
@@ -19,6 +23,8 @@ def testar_fosforos():
 
 
 def testar_calcular_taboada():
+
+
     numero = 2
     multiplicador = 3
     resultado_esperado = None
