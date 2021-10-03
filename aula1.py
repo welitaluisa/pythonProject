@@ -51,10 +51,59 @@ def brincar_de_plim(fim):
             print('{:0>3}'.format(numero))
 
 def exibir_dia_da_semana_if(numero):
-    if numero ==1:
+    print('Execução com IF')
+    if   numero == 1:
         print('o dia é segunda')
+    elif numero == 2:
+        print('o dia é terça')
+    elif numero == 3:
+        print('o dia é quarta')
+    elif numero == 4:
+        print('o dia é quinta')
+    elif numero == 5:
+        print('o dia é sexta')
+    elif numero == 6:
+        print('o dia é sabado')
+    elif numero == 7:
+        print('o dia é domingo')
     else:
-        print('outro dia')
+        print('Numero de dia invalido. Digite um número de 1 a 7')
+'''
+def exibir_dia_da_semana_match(numero):
+    print('Execução com MATCH')
+    match numero:
+        case 1:
+            print('o dia é segunda')
+            exit();
+        case 2:
+            print('o dia é terça')
+            exit();
+        case 3:
+            print('o dia é quarta')
+            exit();
+        case 4:
+            print('o dia é quinta')
+            exit();
+        case 5:
+            print('o dia é sexta')
+            exit();
+        case 6:
+            print('o dia é sabado')
+            exit();
+        case 7:
+            print('o dia é domingo')
+            exit();
+        case _:
+            print('Numero de dia invalido. Digite um número de 1 a 7')
+
+'''
+def brincar_de_parar_ou_continuar():
+    resposta = 'C' # C aqui significa que continua
+
+    while resposta.upper() =='C':
+        resposta = input("Digite C parar continuar ou qualquer outra letra para parar")
+    print('Você decidiu parar com a brincadeira')
+
  # chamar a função de calculo a área do  retangulo
 
 if __name__ == '__main__':
@@ -85,4 +134,10 @@ brincar_de_plim(100)
 
 # exemplo de dia da semana com if - elif - else
 
-exibir_dia_da_semana_if(1)
+exibir_dia_da_semana_if('')
+
+#exemplo de dia da semana com match - case
+#exibir_dia_da_semana_match(1)
+
+#exemplo com while - parar ou continuar
+brincar_de_parar_ou_continuar()
